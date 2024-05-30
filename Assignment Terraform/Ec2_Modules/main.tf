@@ -72,7 +72,7 @@ resource "aws_instance" "webserver1" {
    instance_type = var.instance_type
    vpc_security_group_ids = [aws_security_group.sg.id]
    subnet_id = aws_subnet.sub1.id
-   user_data = base64encode(file("userdata.sh"))
+   user_data = (file("userdata.sh"))
 }
 
 resource "aws_launch_configuration" "ex_LC" {
