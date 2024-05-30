@@ -1,2 +1,3 @@
-# gittt
-# gittt
+Terraform Configuration
+
+teraaform init
