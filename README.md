@@ -47,8 +47,9 @@ The Terraform configuration automates the deployment and management of infrastru
     
 12. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructures lifecycle as needed.
 
-         terraform destroy --var-file=terraform.tfvars
-         terraform refresh --var-file=terraform.tfvars
+         terraform destroy
+         terraform import 
+         terraform refresh 
 
 
 
