@@ -14,6 +14,13 @@ resource "aws_subnet" "sub1" {
    map_public_ip_on_launch = true
 }
 
+resource "aws_subnet" "sub2" {
+vpc_id = aws_vpc.myvpc.id
+cidr_block = "10.0.1.0/24"
+availability_zone = "ap-south-1b"
+map_public_ip_on_launch = true
+}
+
 resource "aws_internet_gateway" "igw" {
    vpc_id = aws_vpc.myvpc.id
 }
@@ -30,6 +37,11 @@ route{
 resource "aws_route_table_association" "rt1" {
    subnet_id = aws_subnet.sub1.id
    route_table_id = aws_route_table.RT.id
+}
+
+resource "aws_route_table_association" "rt2" {
+subnet_id = aws_subnet.sub2.id
+route_table_id = aws_route_table.RT.id
 }
 
 resource "aws_security_group" "sg" {
@@ -75,6 +87,15 @@ resource "aws_instance" "webserver1" {
    user_data = (file("userdata.sh"))
 }
 
+resource "aws_instance" "webserver2" {
+ami = var. ami
+instance_type = var. instance_type
+vpc_security_group_ids = [aws_security_group.sg.id]
+subnet_id = aws_subnet.sub2.id
+user_data = (file("userdata1.sh"))
+}
+
+
 resource "aws_launch_configuration" "ex_LC" {
 
   image_id        = var.ami
@@ -89,7 +110,7 @@ resource "aws_autoscaling_group" "ex_ASG" {
   min_size             = 1
   max_size             = 5
   desired_capacity     = 2
-  vpc_zone_identifier  = [aws_subnet.sub1.id] 
+  vpc_zone_identifier  = [aws_subnet.sub1.id, aws_subnet.sub2.id] 
 }
 
 resource "aws_lb" "ex_ALB" {
@@ -98,7 +119,7 @@ resource "aws_lb" "ex_ALB" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.sg.id] 
-  subnets            = [aws_subnet.sub1.id] 
+  subnets            = [aws_subnet.sub1.id, aws_subnet.sub2.id]  
 
   tags = {
     Name = "albserver"
