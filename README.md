@@ -28,7 +28,7 @@ The Terraform configuration automates the deployment and management of infrastru
 
         terraform plan
     
-7. **Validate**: Run **terraform validate** to preview infrastructre working fine.
+7. **Validate**: Run **terraform validate** to preview infrastructure working fine.
 
         terraform validate
     
@@ -72,4 +72,5 @@ terraform/Ec2_Modules
 ## Conclusion
 
 The Terraform configuration simplifies infrastructure management by automating the provisioning and deployment of resources. By following the provided guidelines and documentation, users can efficiently deploy and maintain infrastructure in a consistent and reproducible manner.
+
 
