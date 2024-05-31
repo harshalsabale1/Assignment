@@ -7,41 +7,48 @@ The Terraform configuration automates the deployment and management of infrastru
 
 ### Steps
 
-1. **Download AWS CLI**:        Download AWS CLI and Install it.
+1. **Create S3 Bucket**: Create S3 Bucket on AWS through CLI with Same Name of terraform Configuration Backend S3 Bucket Name E.g - javapp555.
+
+2. **Download AWS CLI**:        Download AWS CLI and Install it.
 
           https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
    
-2. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
+3. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
 
 
-3. **AWS Configure Using Access and Secret Key**: Using Command
+4. **AWS Configure Using Access and Secret Key**: Using Command
   
          aws configure
    
-4. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructures.
+5. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructures.
 
-5. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
 
-        terraform init
+6. **Enter Ec2 directory**: Enter in Ec2 Module for Executing Terraform Command.
+
+       cd ./Ec2_Modules
    
-6. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructures.
+7. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
 
-        terraform plan
-    
-7. **Validate**: Run **terraform validate** to preview infrastructures working fine.
-
-        terraform validate
-    
-8. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructures.
-
-        terraform apply
+        terraform init --var-file=terraform.tfvars
    
-9. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
-    
-10. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructures lifecycle as needed.
+8. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructures.
 
-         terraform destroy
-         terraform refresh
+        terraform plan --var-file=terraform.tfvars
+    
+9. **Validate**: Run **terraform validate** to preview infrastructures working fine.
+
+        terraform validate --var-file=terraform.tfvars
+    
+10. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructures.
+
+        terraform apply --var-file=terraform.tfvars
+   
+11. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
+    
+12. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructures lifecycle as needed.
+
+         terraform destroy --var-file=terraform.tfvars
+         terraform refresh --var-file=terraform.tfvars
 
 
 
