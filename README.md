@@ -4,19 +4,6 @@
 
 The Terraform configuration automates the deployment and management of infrastructure resources on a cloud provider AWS.
 
-### Steps
-
-1. **Download AWS CLI**: Download AWS CLI and Install it.
-2. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
-3. **Clone Repository**: Clone the repository containing the Terraform configuration files.
-4. **Configuration Customization**: Modify the variables.tf file to customize configuration parameters such as instance type, region, and other resource settings.
-5. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
-6. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
-7. **Validate**: Run **terraform validate** to preview infrastructre working fine.
-5. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
-6. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using Terraform outputs.
-7. **Management**: Use Terraform commands (e.g., `terraform destroy`, `terraform refresh`) to manage the infrastructure lifecycle as needed.
-
 ## Directory Structure
 
 ```
@@ -27,6 +14,30 @@ terraform/
 ├── scripts/
 │   └── setup.sh
 └── README.md
+
+
+### Steps
+
+1. **Download AWS CLI**: Download AWS CLI and Install it.
+   
+2. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
+
+3. **AWS Configure Using Access and Secret Key**: Using command **aws configure**.
+   
+4. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructres.
+
+5. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
+   
+6. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
+    
+7. **Validate**: Run **terraform validate** to preview infrastructre working fine.
+    
+8. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
+   
+10. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
+    
+7. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructure lifecycle as needed.
+
 ```
 
 - **main.tf**: Contains the main Terraform configuration defining resources.
