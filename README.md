@@ -36,7 +36,7 @@ terraform/
 ├── variables.tf
 ├── outputs.tf
 ├── scripts/
-│   └── setup.sh
+│   └── userdata.sh
 └── README.md
 ```
 
