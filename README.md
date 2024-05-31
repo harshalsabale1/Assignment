@@ -7,9 +7,9 @@ The Terraform configuration automates the deployment and management of infrastru
 
 ### Steps
 
-1. **Download AWS CLI**:
+1. **Download AWS CLI**:        Download AWS CLI and Install it.
 
-        Download AWS CLI and Install it.
+          https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
    
 4. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
 
