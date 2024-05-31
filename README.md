@@ -11,25 +11,32 @@ The Terraform configuration automates the deployment and management of infrastru
 
           https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
    
-4. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
+2. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
 
 
-6. **AWS Configure Using Access and Secret Key**: Using command
+3. **AWS Configure Using Access and Secret Key**: Using command
   
          aws configure
    
-   
-9. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructres.
+4. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructres.
 
 10. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
+
+        terraform init
    
-11. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
+12. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
+
+        terraform plan
     
-12. **Validate**: Run **terraform validate** to preview infrastructre working fine.
+14. **Validate**: Run **terraform validate** to preview infrastructre working fine.
+
+        terraform validate
     
-13. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
+16. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
+
+        terraform apply
    
-14. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
+18. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
     
 7. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructure lifecycle as needed.
 
