@@ -20,28 +20,28 @@ The Terraform configuration automates the deployment and management of infrastru
    
 4. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructres.
 
-10. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
+5. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
 
         terraform init
    
-12. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
+6. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
 
         terraform plan
     
-14. **Validate**: Run **terraform validate** to preview infrastructre working fine.
+7. **Validate**: Run **terraform validate** to preview infrastructre working fine.
 
         terraform validate
     
-16. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
+8. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
 
         terraform apply
    
-18. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
+9. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
     
-7. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructure lifecycle as needed.
+10. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructure lifecycle as needed.
 
-           terraform destroy
-           terraform refresh
+         terraform destroy
+         terraform refresh
 
 
 
