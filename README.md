@@ -13,19 +13,23 @@ The Terraform configuration automates the deployment and management of infrastru
    
 4. **Create AWS Access and Secret Key**: Create AWS credentials Access and Secret Key.
 
-5. **AWS Configure Using Access and Secret Key**: Using command **aws configure**.
-   
-6. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructres.
 
-7. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
+6. **AWS Configure Using Access and Secret Key**: Using command
+  
+         **aws configure**.
    
-8. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
-    
-9. **Validate**: Run **terraform validate** to preview infrastructre working fine.
-    
-10. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
    
-11. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
+9. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructres.
+
+10. **Terraform Initialization**: Run **terraform init** to initialize the Terraform working directory.
+   
+11. **Plan**: Run **terraform plan** to preview the changes Terraform will make to the infrastructure.
+    
+12. **Validate**: Run **terraform validate** to preview infrastructre working fine.
+    
+13. **Apply**: Run **terraform apply** to apply the Terraform configuration and provision the infrastructure.
+   
+14. **Verification**: Verify that the resources have been provisioned successfully by checking the cloud provider's console or using **Terraform outputs**.
     
 7. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructure lifecycle as needed.
 
