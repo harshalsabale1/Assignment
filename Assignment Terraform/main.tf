@@ -3,5 +3,6 @@ module "MyEc2" {
     source = "./Ec2_Modules"
     ami = var.ami
     instance_type = var.instance_type
-    cidr_block = var. cidr_block
+    public_subnet_cidr = var.public_subnet_cidr
+    private_subnet_cidr = var.private_subnet_cidr
 }
