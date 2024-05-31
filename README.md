@@ -16,7 +16,7 @@ The Terraform configuration automates the deployment and management of infrastru
 
 6. **AWS Configure Using Access and Secret Key**: Using command
   
-         **aws configure**.
+         aws configure
    
    
 9. **Import Terraform Configuration in VS Code**: Import terraform Configuration files into VS code for creating infrastructres.
