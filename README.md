@@ -4,17 +4,6 @@
 
 The Terraform configuration automates the deployment and management of infrastructure resources on a cloud provider AWS.
 
-## Directory Structure
-
-```
-terraform/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── scripts/
-│   └── setup.sh
-└── README.md
-
 
 ### Steps
 
@@ -38,6 +27,17 @@ terraform/
     
 7. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructure lifecycle as needed.
 
+
+## Directory Structure
+
+```
+terraform/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── scripts/
+│   └── setup.sh
+└── README.md
 ```
 
 - **main.tf**: Contains the main Terraform configuration defining resources.
@@ -46,16 +46,8 @@ terraform/
 - **scripts/**: Directory containing scripts used for resource setup or configuration.
 - **README.md**: Documentation providing an overview of the Terraform configuration and usage instructions.
 
-## Additional Notes
-
-- **Security**: Ensure that sensitive information such as access keys, passwords, and private keys are managed securely.
-- **Version Control**: Use version control systems (e.g., Git) to track changes to the Terraform configuration files.
-- **Documentation**: Maintain up-to-date documentation to facilitate collaboration and troubleshooting.
 
 ## Conclusion
 
 The Terraform configuration simplifies infrastructure management by automating the provisioning and deployment of resources. By following the provided guidelines and documentation, users can efficiently deploy and maintain infrastructure in a consistent and reproducible manner.
 
----
-
-Feel free to customize this template according to your specific Terraform configuration and requirements!
