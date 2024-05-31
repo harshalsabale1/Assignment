@@ -28,13 +28,19 @@ The Terraform configuration automates the deployment and management of infrastru
 7. **Management**: Use Terraform commands **terraform destroy, terraform refresh** to manage the infrastructure lifecycle as needed.
 
 
+
 ## Directory Structure
 
 ```
 terraform/
 ├── main.tf
+├── terraform.tfvars
+├── varibles.tf
+terraform/Ec2_Modules
+├── main.tf
 ├── variables.tf
 ├── outputs.tf
+├── backend.tf
 ├── scripts/
 │   └── userdata.sh
 └── README.md
