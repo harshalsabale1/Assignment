@@ -7,7 +7,7 @@ The Terraform configuration automates the deployment and management of infrastru
 
 ### Steps
 
-1. **Create S3 Bucket**: Create S3 Bucket on AWS through CLI with Same Name of terraform Configuration Backend S3 Bucket Name E.g - javapp555.
+1. **Create S3 Bucket**: Create S3 Bucket on AWS through CLI for Store Terraform.tfstae file store on Remote Backend E.g - javapp555.
 
 2. **Download AWS CLI**:        Download AWS CLI and Install it.
 
